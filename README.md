@@ -11,3 +11,7 @@ Run application
 ```sh
 $ python app/main.py
 ```
+
+## Documentation
+
+Server documentation in this link: 0.0.0.0:8080/docs
