@@ -1,22 +1,15 @@
 from fastapi import FastAPI
 import uvicorn
 
+import router
+
 
 def app():
     app = FastAPI()
 
-    register_router(app)
+    app.include_router(router.router)
 
     return app
-
-def register_router(app):
-    import router
-
-    app.include_router(
-        router.router,
-        prefix='/app'
-    )
-
 
 
 if __name__ == "__main__":
